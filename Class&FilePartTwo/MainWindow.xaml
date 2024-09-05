@@ -1,0 +1,20 @@
+﻿<Window x:Class="Class_FilePartTwo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Class_FilePartTwo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="MasterCardLabel" Content="MasterCard" HorizontalAlignment="Left" Margin="28,32,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="MasterCardLB" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,63,604,0"/>
+        <Label x:Name="VisaLabel" Content="Visa" HorizontalAlignment="Left" Margin="262,40,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="VisaLB" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="204,66,400,0"/>
+        <Label x:Name="DinersLabel" Margin="435,40,277,362" Content="Diners"/>
+        <ListBox x:Name="DinersLB" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="418,66,211,0"/>
+        <Label x:Name="AmexLabel" Content="Amex" HorizontalAlignment="Left" Margin="658,45,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="AmexLB" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="599,66,10,0"/>
+
+    </Grid>
+</Window>
